@@ -1,0 +1,22 @@
+query Input {
+  cart {
+    attribute(key: "date") {
+      value
+    }
+    buyerIdentity {
+      customer {
+        metafield(key: "dob", namespace: "custom") {
+          value
+        }
+      }
+    }
+    lines {
+      id
+      merchandise {
+        ... on ProductVariant {
+          id
+        }
+      }
+    }
+  }
+}

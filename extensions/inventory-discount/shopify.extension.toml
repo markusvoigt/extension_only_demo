@@ -1,0 +1,13 @@
+name = "inventory-discount"
+type = "product_discounts"
+api_version = "2023-07"
+
+[build]
+command = ""
+path = "dist/function.wasm"
+
+
+[ui.paths]
+create = "/inventory-discount/new"
+details = "/inventory-discount/:id"
+

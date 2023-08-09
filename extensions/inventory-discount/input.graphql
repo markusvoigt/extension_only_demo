@@ -1,0 +1,15 @@
+query Input {
+  cart {
+    lines {
+      id
+      merchandise {
+        ... on ProductVariant {
+          id
+          metafield(key: "inventory", namespace: "custom") {
+            value
+          }
+        }
+      }
+    }
+  }
+}
