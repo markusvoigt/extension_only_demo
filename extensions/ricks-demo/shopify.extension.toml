@@ -1,0 +1,11 @@
+name = "ricks-demo"
+type = "product_discounts"
+api_version = "2023-10"
+
+[build]
+command = ""
+path = "dist/function.wasm"
+
+[ui.paths]
+create = "/"
+details = "/"
